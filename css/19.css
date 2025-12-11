@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.section {
+  width: 800px;
+  /* height: 800px; */
+  background-color: #e68e8e;
+}
+.section div {
+ /*  width: 100%;
+  height: 100%; */
+  padding-bottom: 56.25%;/* 16:9비율 세로로 늘어남 */
+  position: relative;
+}
+.section div iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>새미네부엌</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .section {
+      /* background-color: #ffcccc; */
+      padding: 100px 0;
+    }
+    .section .inner {
+      width: 1495px;
+      /* background-color: #fff; */
+      margin: 0 auto;
+    }
+    .section .inner .list {
+      display: flex;
+      justify-content: space-between;
+    }
+    .section .inner .list .item {
+      width: 352px;
+    }
+    .section .inner .list .item .image {
+      width: 100%;
+      height: 352px;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .section .inner .list .item .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+    .section .inner .list .item:hover .image img {
+      transform: scale(1.2);
+      
+    }
+
+    .section .inner .list .item .text {
+      margin-top: 20px;
+    }
+    .section .inner .list .item .text strong {
+      font-size: 22px;
+    }
+    .section .inner .list .item .text p {
+      font-size: 16px;
+      margin-top: 12px;
+    }
+    .section .inner .list .item .text ul {
+      margin-top: 32px;
+      display: flex;
+      gap: 8px;
+    }
+    .section .inner .list .item .text ul li {
+      list-style: none;
+      background-color: #e6ffb7;
+      padding: 10px 18px;
+      border-radius: 20px;
+    }
+
+    .section .inner a {
+      background-color: #007D34;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      width: 120px;
+      height: 50px;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 8px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="section">
+    <div class="inner">
+      <div class="list">
+        <div class="item">
+          <div class="image">
+            <img src="img/recipe-1.png" alt="">
+          </div><!-- .image -->
+          <div class="text">
+            <strong>기본반찬 숙주나물</strong>
+            <p>알맞은 식감의 숙주나물 만드는 비법!</p>
+            <ul>
+              <li>준비시간 5분</li>
+              <li>조리시간 5분</li>
+            </ul>
+          </div><!-- .text -->
+        </div><!-- .item -->
+
+        <div class="item">
+          <div class="image">
+            <img src="img/recipe-2.png" alt="">
+          </div><!-- .image -->
+          <div class="text">
+            <strong>홈메이드 마늘빵</strong>
+            <p>아이, 어른 모두 좋아하는 국민 간식</p>
+            <ul>
+              <li>준비시간 5분</li>
+              <li>조리시간 5분</li>
+            </ul>
+          </div><!-- .text -->
+        </div><!-- .item -->
+
+        <div class="item">
+          <div class="image">
+            <img src="img/recipe-3.jpg" alt="">
+          </div><!-- .image -->
+          <div class="text">
+            <strong>애호박볶음</strong>
+            <p>애호박으로 즐기는 기본반찬</p>
+            <ul>
+              <li>준비시간 5분</li>
+              <li>조리시간 5분</li>
+            </ul>
+          </div><!-- .text -->
+        </div><!-- .item -->
+
+        <div class="item">
+          <div class="image">
+            <img src="img/recipe-4.png" alt="">
+          </div><!-- .image -->
+          <div class="text">
+            <strong>시원칼칼 만두전골</strong>
+            <p>때로는 깔끔하게, 때로는 매콤하게</p>
+            <ul>
+              <li>준비시간 5분</li>
+              <li>조리시간 5분</li>
+            </ul>
+          </div><!-- .text -->
+        </div><!-- .item -->
+      </div><!-- .list -->
+      <a href="#">바로가기</a>
+    </div><!-- .inner -->
+  </div><!-- .section -->
+</body>
+</html>

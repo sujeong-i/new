@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 100px;
+  background-color: #b1ff87;
+  width: 500px;
+  padding: 100px 50px;
+  line-height: 2;
+  /* 폰트크기 * 배수 => 16 * 2 => 32px */
+}

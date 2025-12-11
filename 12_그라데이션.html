@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라데이션</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box01, .box02 {
+      margin: 50px;
+    }
+    .box01 {
+      background: #2A7B9B;
+      background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(212, 104, 199, 1) 52%, rgba(237, 221, 83, 1) 100%);
+      padding: 30px;      
+    }
+    .box02 {
+      background: #833AB4;
+      background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+      padding: 30px;      
+    }
+
+    .box02:hover {
+      background: transparent;
+      color: #833AB4;
+    }
+    .box03 {
+      width: 620px;
+      position: relative;
+    }
+    .box03 img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+    .box03 .text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #833AB4;
+      background: linear-gradient(180deg, rgba(131, 58, 180, 0) 0%, rgba(255, 77, 0, 1) 100%);
+      width: 100%;      
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .box03 .text:hover {
+      background: transparent;
+    }
+
+    .list {
+      width: 1290px;
+      display: flex;
+      justify-content: space-between;
+      margin: 100px auto;
+    }
+    .list .item {
+      width: 620px;
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+    .list .item img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+    .list .item .text {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #000000;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-end;
+
+      color: white;
+
+      padding: 40px;
+      box-sizing: border-box;
+ 
+     
+    }
+    .list .item .text strong {
+      font-size: 32px;
+    }
+    .list .item .text p {
+      font-size: 20px;
+    }
+    .list .item .text:hover {
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="box01">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eligendi maiores adipisci in, dolorum repellat magni laborum dicta, quod ratione distinctio autem hic officiis perferendis voluptatibus dignissimos ducimus nam aliquid?</p>
+  </div> <!-- .box01 -->
+
+  <div class="box02">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eligendi maiores adipisci in, dolorum repellat magni laborum dicta, quod ratione distinctio autem hic officiis perferendis voluptatibus dignissimos ducimus nam aliquid?</p>
+  </div> <!-- .box02 -->
+
+  <div class="box03">
+    <img src="img/image(3).jpg" alt="꽃밭">
+    <div class="text">
+      <strong>item title</strong>
+      <p>item text</p>
+    </div><!-- .text -->
+  </div><!-- .box03 -->
+
+  <div class="list">
+
+    <div class="item">
+      <img src="img/main_3_con1.png" alt="">
+      <div class="text">
+        <strong>성조숙증 성장 클리닉</strong>
+        <p>우리아이 키, 초경, 성조숙, 비만 등 고민 해결</p>
+      </div><!-- .text -->
+    </div><!-- .item -->
+
+    <div class="item">
+      <img src="img/main_3_con2.png" alt="">
+      <div class="text">
+        <strong>아동발달센터</strong>
+        <p>언어치료, 감각통합치료, 사회성치료 등<br>
+          맞춤형 발달 지원</p>
+      </div><!-- .text -->
+    </div><!-- .item -->
+
+  </div> <!-- .list -->
+</body>
+</html>

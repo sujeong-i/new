@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.section-01 {
+  margin: 50px;
+  background-image: url('../img/image\(4\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 
+  repeat (기본값)
+  repeat-x 
+  repeat-y 
+  no-repeat*/
+  background-position: center center;
+  /* 
+  left right center
+  top bottom center
+  숫자px, 숫자%
+  */
+  height: 500px;
+}
+
+.section-02 {
+  height: 500px;
+  margin: 50px;
+  background-image: url('../img/image\(3\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 50px;
+}
+.section-03 {
+  margin: 50px;
+  padding: 200px 50px;
+  background: url('../img/image\(1\).jpg') center center / cover no-repeat;                      
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2단레이아웃</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .section {
+      background-color: #FBE7E3;
+      /* padding: 200px 0; */
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    .section .inner {
+      width: 1290px;
+      /* background-color: white; */
+      margin: 0 auto;
+    }
+    .section .inner .title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section .inner .title p {
+      font-size: 20px;
+      color: #B19490;
+    }
+    .section .inner .title h1{
+      font-size: 48px;
+    }
+    .section .inner .title h1 span {
+      color: #EB5945;
+    }
+    .section .inner .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 50px;
+    }
+    .section .inner .list .item {
+      width: 620px;
+      height: 320px;
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+    .section .inner .list .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    
+    }
+    .section .inner .list .item .text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #000000;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(253, 187, 45, 0) 100%);
+      width: 100%;      
+      height: 100%;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 40px;
+      box-sizing: border-box;
+  
+    }
+    .section .inner .list .item .text strong {
+      font-size: 32px;
+    }
+    .section .inner .list .item .text p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <div class="inner">
+      <div class="title">
+        <p>MEDIMOA MEDICAL CLINIC</p>
+        <h1>메디모아 <span>진료과목</span></h1>
+      </div><!-- .title -->
+
+      <div class="list">
+        <div class="item">
+          <img src="img/main_3_con1.png" alt="">
+          <div class="text">
+            <strong>성조숙증 성장 클리닉</strong>
+            <p>우리아이 키, 초경, 성조숙, 비만 등 고민 해결</p>
+          </div><!-- .text -->
+        </div><!-- .item -->
+
+        <div class="item">
+          <img src="img/main_3_con2.png" alt="">
+          <div class="text">
+            <strong>아동발달센터</strong>
+            <p>언어치료, 감각통합치료, 사회성치료 등<br>
+              맞춤형 발달 지원</p>
+          </div><!-- .text -->
+        </div><!-- .item -->
+
+        <div class="item">
+          <img src="img/main_3_con3.png" alt="">
+          <div class="text">
+            <strong>영유아 발달 검사</strong>
+            <p>영유아 성장속도 점검 및 발달평가와 맞춤형 상담</p>
+          </div><!-- .text -->
+        </div><!-- .item -->
+
+        <div class="item">
+          <img src="img/main_3_con4.png" alt="">
+          <div class="text">
+            <strong>일반진료</strong>
+            <p>소아청소년과 진료부터 성인 대사질환까지 케어</p>
+          </div><!-- .text -->
+        </div><!-- .item -->
+
+      </div><!-- .list -->
+
+    </div><!-- .inner -->
+  </div> <!-- .section -->
+</body>
+</html>

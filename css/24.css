@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/* font-family: "Caveat", cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.section {
+  width: 1200px;
+  margin: 100px auto;
+  position: relative;
+}
+.section .swiper {
+  position: static; 
+}
+.section .swiper .swiper-wrapper {}
+.section .swiper .swiper-wrapper .swiper-slide {}
+.section .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.section .swiper .swiper-wrapper .swiper-slide p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Caveat", cursive;
+}
+
+.section .swiper .swiper-pagination {
+  bottom: -7px;
+}

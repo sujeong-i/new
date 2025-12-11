@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그림자</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box div {
+      width: 300px;
+      height: 300px;
+      border: 1px solid purple;
+      margin: 30px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box div:nth-child(1) {
+      box-shadow: 10px 30px red;
+      /* 그림자 : x축 y축 컬러값 */
+    }
+    .box div:nth-child(2) {
+      box-shadow: 10px 10px 20px red;
+    }
+    .box div:nth-child(3) {
+      box-shadow: -10px -10px 20px red,
+                  10px 10px palevioletred;
+    }
+    .box div:last-child {
+      box-shadow: inset 10px 10px 20px rgba(128, 0, 128, 0.583);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+</body>
+</html>

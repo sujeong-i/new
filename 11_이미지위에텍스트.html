@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지위에 텍스트</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 400px;
+      margin: 50px auto;
+      position: relative;
+    }
+    .box img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .box p {
+      font-size: 20px;
+      background-color: chartreuse;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+
+    }
+    .box02 {
+      width: 400px;
+      margin: 50px auto;
+      position: relative;
+    }
+    .box02 img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .box02 a {
+      text-decoration: none;
+      width: 150px;
+      height: 50px;
+      background-color: tomato;
+      color: wheat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box03 {
+      height: 100vh;/* viewport height */
+      position: relative;
+    }
+    .box03 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .box03 .text {
+      background-color: #ffaaaa;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .list {
+      width: 1500px;
+      background-color: #c6ff80;
+      display: flex;
+      justify-content: space-between;
+      margin: 100px auto;
+     
+    }
+    .list .item {
+      width: 720px;
+      position: relative;
+    }
+    .list .item img {
+      width: 100%;
+      height: 402px;
+      object-fit: cover;
+    }
+    .list .item .text {
+      position: absolute;
+      bottom: 80px;
+      left: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="img/image(4).jpg" alt="">
+    <p>box text</p>
+  </div>
+
+  <div class="box02">
+    <img src="img/image(3).jpg" alt="">
+    <a href="#">view more</a>
+  </div> <!-- .box02 -->
+
+  <div class="box03">
+    <img src="img/image(2).jpg" alt="">
+    <div class="text">
+      <h1>그룹소개</h1>
+      <p>물음표에서 시작된 빛<br>
+      스스로 만든 느낌표가 되다.</p>
+    </div><!-- .text -->
+  </div><!-- .box03 -->
+
+  <div class="list">
+    <div class="item">
+      <img src="img/image(1).jpg" alt="">
+      <div class="text">
+        <h2>인재상</h2>
+        <p>에너지산업과 문화산업의 신기원을 이룩하는<br>
+        대성그룹의 인재상을 소개합니다.</p>
+        <a href="#">view more</a>
+      </div><!-- .text -->
+    </div><!-- item -->
+
+    <div class="item">
+      <img src="img/image(2).jpg" alt="">
+      <div class="text">
+        <h2>채용공고</h2>
+        <p>성실, 봉사, 진취라는 설립정신을 바탕으로 발전하는<br>
+        대성그룹에 지원해보세요.</p>
+        <a href="#">view more</a>
+      </div><!-- .text -->
+    </div><!-- item -->
+  </div><!-- .list -->
+
+
+</body>
+</html>

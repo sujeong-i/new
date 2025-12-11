@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 정렬</title>
+  <style>
+    @font-face {
+      font-family: 'BagelFat';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Shilla';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureM-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Shilla';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+        font-family: 'Shilla';
+    }
+
+    .section {
+      background-color: #e4e4e4;
+      padding: 170px 0;
+    }
+
+    .section .inner {
+      width: 1500px;
+      /* background-color: #b0ff86; */
+      margin: 0 auto;
+    }
+
+    .section .inner h1 {
+      font-size: 40px;
+      color: #000000;
+      margin-bottom: 32px;
+      font-family: 'BagelFat';
+    }
+
+    .section .inner .menu {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .section .inner .menu li {
+      background-color: #ffffff;
+      border: 1px solid #888888;
+      height: 50px;
+      border-radius: 40px;
+      padding: 0 20px;
+      /* padding-left: 20px;
+      padding-right: 20px; */
+      display: flex;
+      align-items: center;
+    }
+
+    .section .inner .menu li:nth-child(1) {
+      background-color: #8833FF;
+      color: #ffffff;
+    }
+
+    .section .inner .list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .section .inner .list .item {
+      width: 357px;
+    }
+
+    .section .inner .list .item img {
+      width: 357px;
+      height: 450px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section .inner .list .item .text {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .section .inner .list .item .text p {
+      margin: 12px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section">
+    <div class="inner">
+      <h1>대한민국 구석구석 지역</h1>
+      <ul class="menu">
+        <li>통합인기순</li>
+        <li>Tmap인기순</li>
+        <li>거리순</li>
+        <li>테마순</li>
+      </ul>
+      <div class="list">
+        <div class="item">
+          <img src="img/image(1).jpg" alt="">
+          <div class="text">
+            <h2>소복소복 꽃눈이 내리는,<br>
+              전국 이팝나무 명소.zip</h2>
+
+            <p>5월에 가기 좋은 전국 이팝나무 명소 모음</p>
+
+            <span>전국</span>
+          </div> <!-- .text -->
+        </div> <!-- .item -->
+
+        <div class="item">
+          <img src="img/image(2).jpg" alt="">
+          <div class="text">
+            <h2>취향따라 떠나요!<br>
+              전라도&경상도 야경 명소 8</h2>
+
+            <p>별 보러 갈까? 물 보러 갈까?</p>
+
+            <span>전국</span>
+          </div> <!-- .text -->
+        </div> <!-- .item -->
+
+        <div class="item">
+          <img src="img/image(3).jpg" alt="">
+          <div class="text">
+            <h2>제주도의 시간을 품은 돌🧡<br>
+              자연이 빚은 이색 여행지 추천</h2>
+
+            <p>제주 이색 테마 여행지 추천 3</p>
+
+            <span>제주도</span>
+          </div> <!-- .text -->
+        </div> <!-- .item -->
+
+        <div class="item">
+          <img src="img/image(4).jpg" alt="">
+          <div class="text">
+            <h2>해변 승마부터 청보리밭까지!<br>
+              고창에서의 특별한 하루</h2>
+
+            <p>고창의 숨은 보물, 명사십리에서 즐기는 해변 승마</p>
+
+            <span>전북 고창군</span>
+          </div> <!-- .text -->
+        </div> <!-- .item -->
+
+      </div> <!-- .list  -->
+    </div> <!-- .inner -->
+  </div> <!-- .section -->
+</body>
+
+</html>
